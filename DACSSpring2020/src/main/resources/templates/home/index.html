@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    
+    <head th:include="layout :: htmlhead"></head>
+    
+    <body>
+        <div class="container">
+			<nav th:replace="layout :: menu">(menu)</nav>
+            <h1>Home page</h1>
+            <strong th:text="${dataatualizada}">
+            </strong>
+        </div>
+
+        <div th:include="layout :: footer" id="footer">(footer)</div>
+    </body>
+</html> 
